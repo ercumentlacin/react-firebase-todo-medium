@@ -20,7 +20,7 @@ export default function ProtectedLayout() {
       container
       spacing={2}
       flexDirection={"column"}
-      flexGrow={1}
+      flex={1}
       bgcolor={colors.grey["A200"]}
     >
       <Grid item xs={12} bgcolor={colors.grey["A100"]}>
@@ -40,7 +40,7 @@ export default function ProtectedLayout() {
           </Box>
         </Container>
       </Grid>
-      <Grid item xs={12}>
+      <Grid container item xs={12} style={{ flex: 1 }}>
         <Outlet />
       </Grid>
     </Grid>

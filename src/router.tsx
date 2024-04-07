@@ -3,6 +3,7 @@ import ProtectedLayout from "./components/protected-layout";
 import { AuthProvider } from "./contexts/AuthContext";
 import AuthLayout from "./modules/auth/aut-layout";
 import AuthPage from "./modules/auth/auth-page";
+import TodoPage from "./modules/todo/todo-page";
 
 export const router = createBrowserRouter([
   {
@@ -28,7 +29,7 @@ export const router = createBrowserRouter([
             children: [
               {
                 path: "/",
-                element: <div>Dashboard</div>,
+                element: <TodoPage />,
               },
             ],
           },
