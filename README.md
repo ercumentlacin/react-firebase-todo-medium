@@ -1,30 +1,22 @@
-# React + TypeScript + Vite
+# React ile Birlikte Firebase Kullanımı
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Medium](https://ercumentlacin.medium.com/react-ile-birlikte-firebase-kullan%C4%B1m%C4%B1-13ecc40f5aac) yazımdaki örnek proje.
 
-Currently, two official plugins are available:
+## Proje Hakkında
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Bu proje, React ile birlikte Firebase kullanımını anlatan bir örnek proje. Projede Firebase Authentication, Firestore kullanılmıştır.
 
-## Expanding the ESLint configuration
+## Proje Gereksinimleri
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Node.js
+- npm
+- Firebase proje oluşturulmuş olmalı ve Firebase web SDK ayarları yapılmalıdır. [ilgili dosya](src/lib/firebase.ts)
 
-- Configure the top-level `parserOptions` property like this:
+## Projeyi Çalıştırmak İçin
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Proje dizininde aşağıdaki komutları çalıştırarak projeyi başlatabilirsiniz.
+
+```bash
+npm install
+npm start
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
