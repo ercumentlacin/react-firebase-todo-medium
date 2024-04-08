@@ -15,8 +15,10 @@ Bu proje, React ile birlikte Firebase kullanımını anlatan bir örnek proje. P
 ## Projeyi Çalıştırmak İçin
 
 Proje dizininde aşağıdaki komutları çalıştırarak projeyi başlatabilirsiniz.
+.env dosyasını oluşturduktan sonra Firebase proje ayarlarınızı eklemeyi unutmayın.
 
 ```bash
 npm install
+cp .env.example .env
 npm start
 ```
